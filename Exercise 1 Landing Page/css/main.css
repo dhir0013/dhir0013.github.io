@@ -1,0 +1,354 @@
+/* css reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* adding custom styles from here in order to 
+  make website like  asme as given */
+html {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+    margin: 9px 0;
+}
+
+p {
+    margin: 9px 0;
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.375rem;
+}
+
+h3 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+body {
+    line-height: 1.5;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    line-height: inherit;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* styles for Mobile */
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Centralysing whole content of website */
+
+.wrapper {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #f7f7ff;
+}
+
+.dash-logo {
+    width: 110px;
+}
+
+main {
+    margin-bottom: 5em;
+}
+
+.apply-now-form {
+    background-color: white;
+    padding: 20px;
+    margin-left: -10px;
+    border-radius: 1em;
+    box-shadow: 4px 10px 24px -5px rgba(0, 0, 0, 0.75);
+    /* giving drop shadow to apply form */
+}
+
+.apply-now-text {
+    font-size: smaller;
+}
+
+a {
+    color: #ff8480;
+    text-decoration: none;
+}
+
+.button-1 {
+    background-color: #57eeab;
+    border: none;
+    border-radius: 9px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin: 9px 0;
+}
+
+.text-box {
+    width: 100%;
+    margin: 5px auto;
+    background-color: #f7f7ff;
+    border: none;
+    border-radius: 0.5em;
+    color: #9b9b9b;
+    padding: 1em;
+    font-family: "montserrat";
+}
+
+footer {
+    background-color: #fffd8c;
+    padding: 1em;
+}
+
+/* Making both text boxes and calculate button in a 
+   line while shifting on mobile view */
+
+.calculator-form {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.button-2 {
+    background-color: #ff8480;
+    color: #f7f7ff;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    grid-area: 2/1/3/3;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: 0 auto;
+}
+
+/* Starting the styling for tablet size */
+
+@media screen and (min-width:375px) and (max-width: 768px) {
+
+    /* Centralysing whole content of website */
+    .wrapper {
+        max-width: 326px;
+    }
+
+    /* Making both text boxes and calculate button in a 
+   line while shifting on mobile view */
+
+    .calculator-form {
+        grid-template-rows: auto;
+    }
+
+    .calculator-form {
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-rows: auto;
+        grid-gap: 9px;
+    }
+
+    .button-2 {
+        grid-area: auto;
+    }
+}
+
+/* styles for desktop */
+@media screen and (min-width:769px) {
+
+    main {
+        display: flex;
+    }
+
+    /* Centralysing whole content of website */
+
+    .wrapper {
+        max-width: 1200px;
+    }
+
+    .bike-image {
+        width: 45%;
+    }
+
+    .apply-now-form {
+        width: 65%;
+    }
+
+    /*Dividing footer in two parts and making social icons at right*/
+
+    .web-footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-logos {
+        margin: 0 0 0 auto;
+    }
+
+    .social-media {
+        margin: auto 0;
+    }
+}
